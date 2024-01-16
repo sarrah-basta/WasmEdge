@@ -17,7 +17,7 @@ public:
       : WasiOCR(HostEnv) {}
   Expect<uint32_t>
   body(const Runtime::CallingFrame &, uint32_t ImagePathPtr,
-       uint32_t ImagePathLen); //, uint32_t NumOfExtractionsPtr);
+       uint32_t ImagePathLen);
 };
 
 class WasiOCRGetOutput : public WasiOCR<WasiOCRGetOutput> {
